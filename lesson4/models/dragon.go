@@ -12,11 +12,11 @@ func NewDragon() *Dragon {
 	return &Dragon{Heads: startHeads(50, 150)}
 }
 
-func (h *Dragon) IsLoose() bool {
+func (h Dragon) IsLoose() bool {
 	return h.Heads <= 0
 }
 
-func (h *Dragon) IsWin() bool {
+func (h Dragon) IsWin() bool {
 	return h.Heads >= 200
 }
 
